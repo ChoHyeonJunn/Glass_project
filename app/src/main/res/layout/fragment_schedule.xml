@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:id="@+id/courseUniversityGroup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/글로벌대학교"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="글로벌대학교" />
+
+        <RadioButton
+            android:id="@+id/메디컬캠퍼스"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="메디컬캠퍼스" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:id="@+id/BULD_NMSpinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"></Spinner>
+
+        <Spinner
+            android:id="@+id/CLSRM_NMSpinner"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"></Spinner>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@color/colorWarning"
+            android:text="강의검색"
+            android:layout_gravity="center"
+            android:id="@+id/searchButton"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#ffffff">
+
+        <ExpandableListView
+            android:id="@+id/scheduleListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="10dp"></ExpandableListView>
+
+    </LinearLayout>
+</LinearLayout>

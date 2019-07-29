@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/classtime"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:text="classtime"/>
+    <TextView
+        android:id="@+id/start_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/classtime"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="start"/>
+    <TextView
+        android:id="@+id/end_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/start_tm"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:text="end"/>
+
+    <TextView
+        android:id="@+id/textChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:text="classname" />
+        <TextView
+            android:id="@+id/textProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/textChild"
+            android:layout_centerVertical="true"
+            android:text="professor"/>
+
+
+
+</LinearLayout>
